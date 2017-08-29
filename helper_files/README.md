@@ -56,6 +56,8 @@ The following helper files can be used to generate autocompletion CSV from the i
 	The comma-separated list of profiles should be the live profiles that auto-completion should be generated for.  e.g. ```-p staff,courses,news```
 
 * Update the permission of the shell script to ensure that the search user can execute the script.  e.g. ```chmod 775 $SEARCH_HOME/conf/COLLECTION/@workflow/post_index.sh```
+
+* Add `!generate_autoc` to `$SEARCH_HOME/conf/COLLECTION/reporting_blacklist.cfg` to prevent the auto completion query from appearing in analytics
 * Test the workflow command by running it on the command line.
 
 ### Step 4: Update the collection
